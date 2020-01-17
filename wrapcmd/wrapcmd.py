@@ -11,8 +11,9 @@ class CmdSession:
         return self._dry_run
 
     @dry_run.setter
-    def dry_run(self):
-        self._dry_run = True
+    def dry_run(self, is_dry_run):
+        if is_dry_run:
+            self._dry_run = True
 
     @property
     def logger(self):
