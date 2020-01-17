@@ -1,10 +1,10 @@
 import subprocess
-import logger
+import wrapcmd.logger
 
 class CmdSession:
     def __init__(self):
         self._dry_run = False
-        self._logger = logger
+        self._logger = wrapcmd.logger
 
     @property
     def dry_run(self):
